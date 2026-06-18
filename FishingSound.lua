@@ -84,11 +84,11 @@ local function OnVibration(eventCode, p1, p2, p3, p4, p5)
     
     if getDisableFishingSound() == false then 
 
-        d(string.format("Vibration: %s | %s | %s | %s | %s", p1, p2, p3, p4, p5))
+        --d(string.format("Vibration: %s | %s | %s | %s | %s", p1, p2, p3, p4, p5))
 
         -- Fishing bite detection
         if p1 == 2500 and p2 > 0 and p3 > 0 then
-                d("Fishing bite detected!")
+                --d("Fishing bite detected!")
 
                 PlaySound(SOUNDS[getReelInSound()])
         end
