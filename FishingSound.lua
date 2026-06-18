@@ -101,10 +101,10 @@ end
 
 local function FS_TryInitialize()
         
-        d("FishingSound: TryInitialize " .. tostring(FS.addonLoaded) .. " " .. tostring(FS.playerLoaded))
+        --d("FishingSound: TryInitialize " .. tostring(FS.addonLoaded) .. " " .. tostring(FS.playerLoaded))
 
         if FS.addonLoaded and FS.playerLoaded then
-                d("FishingSound: Fully initialized, registering fishing event")
+                --d("FishingSound: Fully initialized, registering fishing event")
                 
                 --LibAddonMenu2 Settings 
                 local LAM = LibAddonMenu2
@@ -189,7 +189,7 @@ local function OnPlayerActivated()
         
         if FS.playerLoaded then return end
         
-        d("FishingSound: Player activated")
+        --d("FishingSound: Player activated")
         FS.playerLoaded = true
 
         FS_TryInitialize()
